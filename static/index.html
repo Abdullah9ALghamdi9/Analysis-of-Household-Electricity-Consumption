@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnergyScope | Home Energy Insights</title>
+<link rel="stylesheet" href="/static/style.css?v=3">
+</head>
+<body data-theme="light">
+<div class="site-shell">
+<header class="topbar">
+  <a href="#overview" class="brand"><span class="brand-mark">ϟ</span><span>EnergyScope<small>Home Energy Insights</small></span></a>
+  
+  <div class="settings" aria-label="Display preferences"><button id="themeToggle" class="toggle-btn" type="button" title="Switch between light and dark mode" aria-label="Switch appearance">☾ <span id="themeText">Dark</span></button><button id="clockToggle" class="toggle-btn" type="button" title="Switch between 12 and 24 hour time" aria-label="Switch time format">◷ <span id="clockText">12-hour</span></button></div>
+</header>
+<main id="overview" class="content">
+  <section class="intro"><div class="eyebrow">HOME ENERGY OVERVIEW <span class="pill">Recorded usage</span></div><h1>Understand your home's energy</h1><p>Explore consumption patterns, peak periods, and how your household uses electricity.</p><div class="date-range" id="dateRange">Loading period...</div></section>
+  <div class="alert hidden" id="errorBox" role="alert"></div>
+  <section class="kpis" aria-label="Energy statistics"><article class="kpi"><span>Total energy used</span><strong id="totalEnergy">—</strong><small>kWh in the available readings</small></article><article class="kpi"><span>Average demand</span><strong id="averagePower">—</strong><small>kilowatts (kW)</small></article><article class="kpi"><span>Hours analyzed</span><strong id="totalHours">—</strong><small>Hours with sufficient readings</small></article><article class="kpi"><span>Typical peak time</span><strong id="peakHour">—</strong><small>Highest average demand by hour</small></article></section>
+  <section class="analytics" aria-label="Energy charts">
+    <article class="panel primary-chart">
+      <div class="panel-heading"><div><h2>Energy use throughout the day</h2><p>Average electricity demand by hour · kW</p></div><span class="panel-chip">Hourly profile</span></div>
+      <div class="chart-wrap"><div id="hourChart" class="chart-area"></div><div id="chartTooltip" class="chart-tooltip" role="status" hidden></div></div>
+      <p class="chart-caption">Hover or tap a point to see the exact time and average electricity demand.</p>
+    </article>
+  </section>
+  <section class="device-grid" aria-label="Appliance group energy use">
+    <article class="panel appliance-bars">
+      <div class="panel-heading"><div><h2>Where your electricity goes</h2><p>Total recorded energy by appliance group · kWh</p></div></div>
+      <div id="deviceBars" class="device-bars"></div>
+      <p class="panel-note">These are monitored appliance groups, not individual appliances.</p>
+    </article>
+    <article class="panel appliance-donut-panel">
+      <div class="panel-heading"><div><h2>Energy share by appliance group</h2><p>Percentage of metered appliance-group energy</p></div></div>
+      <div class="donut-row"><div id="donut" class="donut"><span>Energy<small>share</small></span></div><div id="deviceLegend" class="pattern-legend"></div></div>
+      <p class="panel-note">Based on the three monitored groups only; other household electricity use is not included here.</p>
+    </article>
+  </section>
+  <section id="about" class="about"><h2>About this dashboard</h2><p>This is a demonstration using recorded household electricity readings, not a live connection to a home meter. The analysis groups similar hours into low, medium, and high usage periods. The kitchen, laundry, and water heating & cooling figures represent monitored appliance groups—not separate individual devices.</p><p id="quality" class="footnote"></p></section>
+</main><footer>EnergyScope · Household energy exploration</footer>
+</div><script src="/static/app.js?v=3"></script>
+</body></html>

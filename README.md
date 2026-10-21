@@ -79,6 +79,8 @@ Open the dashboard:
 http://127.0.0.1:8002?utm_source=chatgpt.com
 
 The website requires the saved model pipeline, metadata, and processed dashboard data to be placed in the `website_artifacts` directory.
+<img width="1440" height="900" alt="‏لقطة الشاشة ١٤٤٨-٠٥-١٠ في ٩ ٢٠ ٠٦ ص" src="https://github.com/user-attachments/assets/4a3a0111-f602-43ec-92e4-187af550edb0" />
+
 
 ## Limitations
 

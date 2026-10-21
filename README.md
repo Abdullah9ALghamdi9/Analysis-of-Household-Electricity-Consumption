@@ -11,7 +11,6 @@ The project uses **K-Means Clustering** to group electricity consumption into lo
 - Daily peak usage hour identification
 - Appliance group energy consumption comparison
 - Interactive charts and visualizations
-- Dark and light mode
 - 12-hour and 24-hour time formats
 
 ## Technologies Used

@@ -1,4 +1,4 @@
-# ⚡ EnergyScope — Household Electricity Consumption Analysis
+#  Household Electricity Consumption Analysis
 
 EnergyScope is a web-based machine learning project designed to analyze household electricity consumption and identify energy usage patterns.
 
